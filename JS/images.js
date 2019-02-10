@@ -15,10 +15,10 @@ var updateImage = function() {
         index = 0;
     }
 
-    $("#image").fadeOut(1000, //Speed - (higher slower)
-        function () { //On fadeOut complete
-            $(this).css("background-image", "url(" + images[index - 1] + ")") //Change BG
-                .fadeIn(1500); //FadeIn
+    $("#image").fadeOut(1000,
+        function () {
+            $(this).css("background-image", "url(" + images[index - 1] + ")")
+                .fadeIn(1500);
         });
     img.style.animationDuration = '35s';
     img.style.transform = 'scale(0.44)';
@@ -33,3 +33,6 @@ var updateImage = function() {
 
 var interval = setInterval(updateImage, 10000);
 updateImage();
+
+
+
